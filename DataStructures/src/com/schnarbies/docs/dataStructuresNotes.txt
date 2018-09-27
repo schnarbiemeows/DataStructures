@@ -1,0 +1,49 @@
+Notes on Data Structures:
+
+0.) Big O:
+n! > 2^n > n^2 > nlog(n) > n > sqrt(n) > n > 1
+
+O(1)	=> 	Constant
+O(logn)	=>  logarithmic
+O(n)	=>	Linear
+O(nlogn)	=>	n log-star n
+O(n^2)	=>	Quadratic
+
+1.) Arrays:
+arrays are great for getting and setting when you KNOW what the index is
+- contiguous block of memory
+- if we know the index of an element in an array, the time to retrieve the element will be 
+	the same, no matter where it is in the array
+- retrieve with index => O(1)
+- retrieve without index => O(n)
+- add an element to a full array => O(n) 
+- add an element to the end of an array(has space) => O(1)
+- insert/update an element at a specific index => O(1)
+- delete an element by setting to null => O(1)
+- delete an element by shifting elements => O(n)
+
+2.) Sort algorithms
+Bubble Sort: O(n^2) complexity
+	- we keep two indexes: forward current index of the array as we are sorting through it
+					 : backward incrementing index of the end of the current array that we are sorting through
+	- each full iteration through the array will migrate the largest value to the end of the array
+	- if the value of item[a] is > value item[a+1] then swap the items
+	- stable sorting
+Selection Sort: O(n^2) complexity
+	- same indexes as Bubble Sort
+	- each full iteration through the array we keep track of the index of the largest value we have found
+	  and then we swap the value at this index with the value at the end of the array
+	- less swapping this way
+	- unstable sorting
+Insertion Sort: O(n^2) complexity
+	- same indexes as Bubble Sort except the unsorted index is forward incrementing(we are migrating the
+	  larest values to the front of the array)
+	- sorted partition grows from left to right, unsorted shrinks from left to right
+	- each full iteration through the array we keep track of the value to insert and compare it to each
+	  item in the sorted partition, going from right to left
+	- if the value of item to insert is < value item[a] then swap the items
+	
+2a.) stable versus unstable sorts:
+- if the sort algorithm swaps duplicate items, then its an unstable sort
+- while this may not matter for numbers, for objects it can lead to problems
+
