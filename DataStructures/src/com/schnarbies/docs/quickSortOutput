@@ -1,0 +1,80 @@
+20 35 -15 7 55 1 -22 
+( Descending down one Root node )
+partitioning input : start:0 to end:7
+before : 20 35 -15 7 55 1 -22 
+New pivot Value = 20 , i = 0 , j = 7
+copying value : -22 from the right at index: 6 to the left at index: 0 , overwriting 20
+Our new array is : -22 35 -15 7 55 1 -22 
+and our pivot value is still : 20
+copying value : 35 from the left at index: 1 to the right at index: 6 , overwriting -22
+Our new array is : -22 35 -15 7 55 1 35 
+and our pivot value is still : 20
+copying value : 1 from the right at index: 5 to the left at index: 1 , overwriting 35
+Our new array is : -22 1 -15 7 55 1 35 
+and our pivot value is still : 20
+incrementing i to => 2
+incrementing i to => 3
+copying value : 55 from the left at index: 4 to the right at index: 5 , overwriting 1
+Our new array is : -22 1 -15 7 55 55 35 
+and our pivot value is still : 20
+decrementing j to => 4
+j(4) is no longer less than i(4), so we are done with this partitioning method, setting index: 4 to 20 overwriting 55
+after : -22 1 -15 7 20 55 35 
+returning new pivotIndex => 4
+quickSort : start:0 to pivotIndex:4
+( Descending down one Left node )
+partitioning input : start:0 to end:4
+before : -22 1 -15 7 
+New pivot Value = -22 , i = 0 , j = 4
+decrementing j to => 3
+decrementing j to => 2
+decrementing j to => 1
+decrementing j to => 0
+j(0) is no longer less than i(0), so we are done with this partitioning method, setting index: 0 to -22 overwriting -22
+after : -22 1 -15 7 
+returning new pivotIndex => 0
+quickSort : start:0 to pivotIndex:0
+( Descending down one Left node )
+( Ascending a node with array => )
+quickSort : pivotIndex+1:1 to end:4
+( Descending down one Right node )
+partitioning input : start:1 to end:4
+before : 1 -15 7 
+New pivot Value = 1 , i = 1 , j = 4
+decrementing j to => 3
+copying value : -15 from the right at index: 2 to the left at index: 1 , overwriting 1
+Our new array is : -15 -15 7 
+and our pivot value is still : 1
+incrementing i to => 2
+j(2) is no longer less than i(2), so we are done with this partitioning method, setting index: 2 to 1 overwriting -15
+after : -15 1 7 
+returning new pivotIndex => 2
+quickSort : start:1 to pivotIndex:2
+( Descending down one Left node )
+( Ascending a node with array => -15 )
+quickSort : pivotIndex+1:3 to end:4
+( Descending down one Right node )
+( Ascending a node with array => 7 )
+( Ascending a node with array => -15 1 7 )
+( Ascending a node with array => -22 -15 1 7 )
+quickSort : pivotIndex+1:5 to end:7
+( Descending down one Right node )
+partitioning input : start:5 to end:7
+before : 55 35 
+New pivot Value = 55 , i = 5 , j = 7
+copying value : 35 from the right at index: 6 to the left at index: 5 , overwriting 55
+Our new array is : 35 35 
+and our pivot value is still : 55
+incrementing i to => 6
+j(6) is no longer less than i(6), so we are done with this partitioning method, setting index: 6 to 55 overwriting 35
+after : 35 55 
+returning new pivotIndex => 6
+quickSort : start:5 to pivotIndex:6
+( Descending down one Left node )
+( Ascending a node with array => 35 )
+quickSort : pivotIndex+1:7 to end:7
+( Descending down one Right node )
+( Ascending a node with array => )
+( Ascending a node with array => 35 55 )
+( Ascending a node with array => -22 -15 1 7 20 35 55 )
+-22 -15 1 7 20 35 55 

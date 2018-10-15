@@ -9,7 +9,7 @@ public class InsertionSort {
 		// unsorted partition index = 6 - this is the last index of the unsorted partition
 		// i = 0 - index used to traverse the array from left to right
 		// O(n^2) 
-		// each time we traverse through the array, we tabs of the current largest number
+		// each time we traverse through the array, we keep tabs of the current largest number
 		// and its index, then at the end of each iteration swap the largest # found with
 		// the last # in the array(then reset your max and index
 		// unstable sort

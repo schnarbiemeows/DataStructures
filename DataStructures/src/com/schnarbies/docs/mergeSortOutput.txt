@@ -1,0 +1,57 @@
+20 35 -15 7 55 1 -22 
+splitting array index : start:0 to mid:3
+splitting array index : start:0 to mid:1
+Single : 20 
+splitting array index : mid:1 to end:3
+splitting array index : start:1 to mid:2
+Single : 35 
+splitting array index : mid:2 to end:3
+Single : -15 
+merging array index : start:1 to mid:2 to end:3
+before : 35 -15 
+pushing right[2] = -15 to temp[0]
+finishing left[1] = 35 to temp[1]
+after : -15 35 
+merging array index : start:0 to mid:1 to end:3
+before : 20 -15 35 
+pushing right[1] = -15 to temp[0]
+pushing left[0] = 20 to temp[1]
+finishing right[2] = 35 to temp[2]
+after : -15 20 35 
+splitting array index : mid:3 to end:7
+splitting array index : start:3 to mid:5
+splitting array index : start:3 to mid:4
+Single : 7 
+splitting array index : mid:4 to end:5
+Single : 55 
+merging array index : start:3 to mid:4 to end:5
+before : 7 55 
+already ordered
+splitting array index : mid:5 to end:7
+splitting array index : start:5 to mid:6
+Single : 1 
+splitting array index : mid:6 to end:7
+Single : -22 
+merging array index : start:5 to mid:6 to end:7
+before : 1 -22 
+pushing right[6] = -22 to temp[0]
+finishing left[5] = 1 to temp[1]
+after : -22 1 
+merging array index : start:3 to mid:5 to end:7
+before : 7 55 -22 1 
+pushing right[5] = -22 to temp[0]
+pushing right[6] = 1 to temp[1]
+finishing left[3] = 7 to temp[2]
+finishing left[4] = 55 to temp[3]
+after : -22 1 7 55 
+merging array index : start:0 to mid:3 to end:7
+before : -15 20 35 -22 1 7 55 
+pushing right[3] = -22 to temp[0]
+pushing left[0] = -15 to temp[1]
+pushing right[4] = 1 to temp[2]
+pushing right[5] = 7 to temp[3]
+pushing left[1] = 20 to temp[4]
+pushing left[2] = 35 to temp[5]
+finishing right[6] = 55 to temp[6]
+after : -22 -15 1 7 20 35 55 
+-22 -15 1 7 20 35 55 

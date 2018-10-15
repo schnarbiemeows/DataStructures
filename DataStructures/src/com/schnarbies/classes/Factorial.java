@@ -8,7 +8,7 @@ public class Factorial {
 		System.out.println(recursiveFactorial(3));
 	}
 	
-	// iterative, non-recursivemethod
+	// iterative, non-recursive method
 	public static int iterativeFactorial(int num) {
 		if(num == 0)
 			return 1;
