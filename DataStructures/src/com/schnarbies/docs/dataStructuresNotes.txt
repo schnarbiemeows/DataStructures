@@ -123,3 +123,20 @@ Doubly LinkedList:
 	- FIFO data access
 	- main methods: add() or enqueue(), remove or dequeue(), peek()
 	- a Deque is a double ended queue, as if it was backed by a double linked list
+6.) Maps
+	
+Hash Tables:
+	- abstract data type
+	- provide access to data using keys
+	- uses key/value pairs, data types don't have to match
+	- optimized for retrieval(when you know the key)
+	- Associative Array is one type of hash table
+	- under the covers, the keys are being converted to integers, using Hashing
+	- the hash function is Object.hashCode()
+	- Collision occurs when more than one key has the same hashed value
+	- Load Factor - tells us how full the hash table is
+	- LF = # of items/capacity = size/capacity
+	- LF is used to decide when to resize the underlying array backing the has table
+	- LF too low = lots of empty space
+	- LF too high = to many collisions
+	
