@@ -57,7 +57,7 @@ Shell Sort: O(n^2) complexity
 	- goal is to reduce the amount of shifting required
 	- unstable 
 	- in-place algorithm(uses only the same array that is being sorted)
-
+ 
 Recursion!!!!!!!!!!!!!!
 
 Merge Sort: O(nlogn)
@@ -93,7 +93,19 @@ Radix Sort: O(n)
 	- radix = the number of unique digits or values that a numbering system of an alphabet has
 	- example: for decimal system, radix is 10, for binary #s, radix is 2
 	- width means the width of the field being sorted, so all numbers must have a consistent # of digits
-
+Bucket Sort: O(n)
+	- not in place
+	- stability depends on the sorting algorithm
+	- uses hashing
+	- makes assumptions about the data
+	- performs best when the hashed values of items being sorted are evenly distributed, so there aren't
+	  many collisions
+	1. distribute the tems into buckets based on their hashed values(scattering phase)
+	2. Sort the items in each bucket
+	3. merge the buckets - can just concatenate them(gathering phase)
+	- a generalization of counting sort
+	- the values in bucket X must be > values in bucket X-1, and < values in bucket X+1
+	
 	
 3.) Lists
 ArrayLists:
