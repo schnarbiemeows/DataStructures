@@ -188,3 +188,16 @@ Binary Search Tree: O(logn)
 		- node is a leaf
 		- node has one child
 		- node has 2 children
+9.) Heaps:
+	- a Heap is a complete Binary Tree(every level of the tree is full except for the lowest level,
+	  and all of the leaves on the lowest level all occupy the leftmost positions)
+	- must satisfy the heap property, 2 kinds:
+	- Max Heap: every parent is greater than or equal to its children
+	- Min Heap: every parent is less than or equal to its children
+	- binary heap must be a complete tree
+	- children are added at each level from left to right
+	- usually implemented as arrays
+	- the max or minimum value will always beat the root of the tree
+	- heapify: the process of converting a binary tree into a heap, often has to be done
+	  after insertion of deletion
+	- no required ordering between siblings
