@@ -42,7 +42,7 @@ Selection Sort: O(n^2) complexity
 	- in-place algorithm(uses only the same array that is being sorted)
 Insertion Sort: O(n^2) complexity
 	- same indexes as Bubble Sort except the unsorted index is forward incrementing(we are migrating the
-	  larest values to the front of the array)
+	  largest values to the front of the array)
 	- sorted partition grows from left to right, unsorted shrinks from left to right
 	- each full iteration through the array we keep track of the value to insert and compare it to each
 	  item in the sorted partition, going from right to left
@@ -100,7 +100,7 @@ Bucket Sort: O(n)
 	- makes assumptions about the data
 	- performs best when the hashed values of items being sorted are evenly distributed, so there aren't
 	  many collisions
-	1. distribute the tems into buckets based on their hashed values(scattering phase)
+	1. distribute the items into buckets based on their hashed values(scattering phase)
 	2. Sort the items in each bucket
 	3. merge the buckets - can just concatenate them(gathering phase)
 	- a generalization of counting sort

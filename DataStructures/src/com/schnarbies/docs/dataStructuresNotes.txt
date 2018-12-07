@@ -42,7 +42,7 @@ Selection Sort: O(n^2) complexity
 	- in-place algorithm(uses only the same array that is being sorted)
 Insertion Sort: O(n^2) complexity
 	- same indexes as Bubble Sort except the unsorted index is forward incrementing(we are migrating the
-	  larest values to the front of the array)
+	  largest values to the front of the array)
 	- sorted partition grows from left to right, unsorted shrinks from left to right
 	- each full iteration through the array we keep track of the value to insert and compare it to each
 	  item in the sorted partition, going from right to left
@@ -100,7 +100,7 @@ Bucket Sort: O(n)
 	- makes assumptions about the data
 	- performs best when the hashed values of items being sorted are evenly distributed, so there aren't
 	  many collisions
-	1. distribute the tems into buckets based on their hashed values(scattering phase)
+	1. distribute the items into buckets based on their hashed values(scattering phase)
 	2. Sort the items in each bucket
 	3. merge the buckets - can just concatenate them(gathering phase)
 	- a generalization of counting sort
@@ -196,8 +196,20 @@ Binary Search Tree: O(logn)
 	- Min Heap: every parent is less than or equal to its children
 	- binary heap must be a complete tree
 	- children are added at each level from left to right
-	- usually implemented as arrays
+	- usually implemented as arrays, the way it works is:
+		if the parent is at index i in the Array, it's children are at 2i+1 and 2i+2
+		if a child is at index i, its parent is at floor((i-1)/2)
 	- the max or minimum value will always beat the root of the tree
 	- heapify: the process of converting a binary tree into a heap, often has to be done
 	  after insertion of deletion
+	- 2 step process to add:
+		1. add the new Node to the bottom, left-most position
+		2. Heapify: while (node's value > parent's value) --> swap node with its parent
 	- no required ordering between siblings
+	- Deleting:
+		when deleting a node, you have to replace it with the rightmost leaf
+		then, to heapify, you either heapify up or down
+		- first, if the replacement value > its parent, heapify up until this is no longer true
+		- else, if the replacement value < either of its children, heapify down until it isn't.
+		  shouldn't matter which one you replace.
+		
