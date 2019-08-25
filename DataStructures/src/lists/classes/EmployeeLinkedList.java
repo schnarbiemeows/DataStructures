@@ -1,9 +1,17 @@
 package lists.classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class EmployeeLinkedList {
-	
+
 	private EmployeeNode head; // the current head of the LL
 	private int size;
+
+	/**
+	 * @param employee
+	 */
 	public void addTofront(Employee employee) {
 		// create a new node
 		EmployeeNode node = new EmployeeNode(employee);
@@ -13,10 +21,13 @@ public class EmployeeLinkedList {
 		head = node;
 		size++;
 	}
-	
+
+	/**
+	 * @return
+	 */
 	public EmployeeNode removeFromFront() {
 		// check for empty first
-		if(isEmpty()) {
+		if (isEmpty()) {
 			return null;
 		}
 		// get a handle on the current head node
@@ -30,23 +41,32 @@ public class EmployeeLinkedList {
 		// return this node for whatever reason
 		return node;
 	}
-	
+
+	/**
+	 *
+	 */
 	public void printList() {
 		EmployeeNode current = head;
 		System.out.print("HEAD -> ");
-		while(current != null) {
+		while (current != null) {
 			System.out.print(current);
 			System.out.print(" -> ");
 			current = current.getNext();
 		}
 		System.out.println(" null");
 	}
-	
+
+	/**
+	 * @return
+	 */
 	public int getSize() {
 		return size;
 	}
+
+	/**
+	 * @return
+	 */
 	public boolean isEmpty() {
-		return head==null;
+		return head == null;
 	}
 }
-

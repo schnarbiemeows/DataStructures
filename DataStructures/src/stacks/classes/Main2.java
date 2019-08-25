@@ -1,13 +1,21 @@
 package stacks.classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class Main2 {
 
+	/**
+	 * lecture 58 - stack implementation with LinkedList
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		// lecture 58 - stack implementation with LinkedList
-		Employee janeJones = new Employee("Jane","Jones",123);
-		Employee johnDoe = new Employee("John","Doe",4567);
-		Employee marySmith = new Employee("Mary","Smith",22);
-		Employee mikeWilson = new Employee("Mike","Wilson",3245);
+		Employee janeJones = new Employee("Jane", "Jones", 123);
+		Employee johnDoe = new Employee("John", "Doe", 4567);
+		Employee marySmith = new Employee("Mary", "Smith", 22);
+		Employee mikeWilson = new Employee("Mike", "Wilson", 3245);
 		Employee billEnd = new Employee("Bill", "End", 78);
 		LinkedStack stack = new LinkedStack();
 		stack.push(janeJones);

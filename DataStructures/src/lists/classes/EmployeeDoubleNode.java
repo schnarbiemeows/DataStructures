@@ -1,11 +1,15 @@
 package lists.classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class EmployeeDoubleNode {
 
 	private Employee employee;
 	private EmployeeDoubleNode next;
 	private EmployeeDoubleNode previous;
-	
+
 	public EmployeeDoubleNode(Employee employee) {
 		this.employee = employee;
 	}
@@ -25,7 +29,7 @@ public class EmployeeDoubleNode {
 	public void setNext(EmployeeDoubleNode next) {
 		this.next = next;
 	}
-	
+
 	public EmployeeDoubleNode getPrevious() {
 		return previous;
 	}
@@ -34,6 +38,7 @@ public class EmployeeDoubleNode {
 		this.previous = previous;
 	}
 
+	@Override
 	public String toString() {
 		return employee.toString();
 	}

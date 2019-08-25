@@ -1,8 +1,15 @@
 package com.schnarbies.classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class Test {
 
 	// lecture 12
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		int[] intArray = new int[7];
 		intArray[0] = 20;
@@ -12,22 +19,22 @@ public class Test {
 		intArray[4] = 55;
 		intArray[5] = 1;
 		intArray[6] = -22;
-		
-		for(int i = 0; i < intArray.length; i++) {
-		//	System.out.println("index " + i + " = " + intArray[i]);
+
+		for (int i = 0; i < intArray.length; i++) {
+			// System.out.println("index " + i + " = " + intArray[i]);
 		}
-		
+
 		// someone says "go find me the value 7 from the array
 		// O(n) search because we do not know what the index is
 		int index = -1;
-	    for (int i = 0; i < intArray.length; i++) {
-	        if (intArray[i] == 7) {
-	            index = i;
-	            break;
-            }
-        }
+		for (int i = 0; i < intArray.length; i++) {
+			if (intArray[i] == 7) {
+				index = i;
+				break;
+			}
+		}
 
-        System.out.println("index = " + index);
+		System.out.println("index = " + index);
 	}
 
 }

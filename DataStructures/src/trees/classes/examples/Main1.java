@@ -1,9 +1,18 @@
 package trees.classes.examples;
 
+/**
+ * @author dylan
+ *
+ */
 public class Main1 {
 
+	/**
+	 * lecture 90,91,92,93 - BST(insertion,traversal,get,min,max,delete)
+	 * 
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
-		// lecture 90,91,92,93 - BST(insertion,traversal,get,min,max,delete)
 		Tree1 intTree = new Tree1();
 		intTree.insert(25);
 		intTree.insert(20);
